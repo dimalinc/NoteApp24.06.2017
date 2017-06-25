@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_title"
+        android:background="@drawable/apptheme_edit_text_holo_light"
+        android:padding="@dimen/margin_padding_tiny"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:text="TakePhoto"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+    <EditText
+        android:id="@+id/edit_text_note"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:layout_width="match_parent"
+
+        android:hint="@string/enter_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_tiny"
+        android:gravity="top"
+        android:background="@drawable/apptheme_edit_text_holo_light"
+        android:inputType="textMultiLine"/>
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/select_intro"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:text="@string/show_intro" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/picture" />
+
+</LinearLayout>
